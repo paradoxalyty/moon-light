@@ -50,8 +50,8 @@ section img {
   pointer-events: none;
 }
 
-section .moon {
-  left: 10px;
+.moon-center {
+  display: none;
 }
 
 #text {
@@ -67,6 +67,14 @@ section .moon {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .moon {
+    display: none;
+  }
+
+  .moon-center {
+    display: block;
+  }
+
   #text {
     font-size: 9em;
   }
